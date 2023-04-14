@@ -1,0 +1,149 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    /* font-family: sans-serif; */
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    position: sticky;
+    top: 0px;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: black;
+}
+
+#home{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(img4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite ease;
+    animation-delay: 5s;
+    opacity: 0.8;
+    
+}
+
+.content{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase; 
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    /* color: white; */
+}
+
+#titleTxtFoot{
+    padding: 10px;
+    /* bottom: 10px; */
+    width: 50%;
+    background: #00000065;
+    color: #fff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+  }
+
+@keyframes change{
+    0%
+    {
+       background-image: url(img2.jpg); 
+       color: black;
+    }
+
+    20%
+    {
+        background-image: url(img3.jpg);
+        color: white;
+    }
+    40%
+    {
+        background-image: url(img4.jpg);
+        color: black;
+    }
+    60%
+    {
+        background-image: url(img5.jpg);
+        color: black;
+    }
+    80%
+    {
+        background-image: url(img6.jpg);
+        color: white;
+    }
+    100%
+    {
+        background-image: url(img7.jpg);
+        color: white;
+    }
+}
+
+#tribute{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(img2_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+}
+
+.content2{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase; 
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+}
+
+#tribute p{
+    font-family: "Open Sans", sans-serif;
+    padding: 10px;
+    /* bottom: 10px; */
+    width: 50%;
+    background: #00000065;
+    color: #fff;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.1rem;
+}
